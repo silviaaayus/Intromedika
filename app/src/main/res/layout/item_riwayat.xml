@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginRight="@dimen/_10sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:orientation="vertical"
+    android:id="@+id/cardview_riwayat"
+    app:cardCornerRadius="@dimen/_8sdp"
+    app:cardElevation="@dimen/_5sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_12sdp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_50sdp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="@dimen/_140sdp"
+                        android:layout_height="wrap_content"
+                        android:text="Tanggal Pemeriksaan"
+                        android:textColor="?colorPrimaryVariant"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_weight="1.5"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_alignParentLeft="true"
+                        android:id="@+id/tanggal_pemeriksaan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="03-03-2021"
+                        android:textColor="?colorPrimaryVariant"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_weight="0.5"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="@dimen/_140sdp"
+                        android:layout_height="wrap_content"
+                        android:text="Nama Pasien"
+                        android:textColor="?colorPrimaryVariant"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold"
+                        android:layout_weight="1.5" />
+
+                    <TextView
+                        android:layout_alignParentLeft="true"
+                        android:id="@+id/nama_pasien"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nama Pasien"
+                        android:textColor="?colorPrimaryVariant"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_weight="0.5"
+                        android:gravity="left|center_horizontal"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="@dimen/_140sdp"
+                        android:layout_height="wrap_content"
+                        android:text="Nama Dokter"
+                        android:textColor="?colorPrimaryVariant"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_weight="1.5"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_alignParentLeft="true"
+                        android:id="@+id/dokter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nama Dokter   "
+                        android:textColor="?colorPrimaryVariant"
+                        android:textSize="@dimen/_12sdp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:background="@drawable/bg_tarif"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:text="Rp.10000"
+                android:id="@+id/tarif"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

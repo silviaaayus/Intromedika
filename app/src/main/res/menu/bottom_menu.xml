@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/riwayat"
+        android:icon="@drawable/ic_baseline_article_24"
+        android:title= "Riwayat"/>
+
+    <item
+        android:id="@+id/antrian"
+        android:icon="@drawable/ic_baseline_insert_drive_file_24"
+        android:title= "Antrian"/>
+
+    <item
+        android:id="@+id/profil"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="Akun"/>
+
+</menu>

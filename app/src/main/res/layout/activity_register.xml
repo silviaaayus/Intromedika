@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/h"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:src="@drawable/ic_baseline_close_24"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:textColor="@color/black"
+                android:fontFamily="@font/comfortaa"
+                android:textSize="@dimen/_25sdp"/>
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="NIK"
+                    android:textColor="@color/black"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    >
+                    <EditText
+                        android:textColor="@color/black"
+                        android:textColorHint="#7C7777"
+                        android:layout_weight="0.8"
+                        android:fontFamily="@font/comfortaa"
+                        android:id="@+id/edtnik"
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/login"
+                        android:hint="NIK"
+                        android:textSize="@dimen/_12sdp"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:singleLine="true" />
+
+                    <Button
+                        android:backgroundTint="@color/hijau"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:id="@+id/btn_cari"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.2"
+                        android:gravity="center"
+                        android:text="Cari"
+                        android:fontFamily="@font/comfortaa_bold"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/LinearRegister">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Nama Pasien"
+                    android:textColor="@color/black"
+                    />
+
+                <EditText
+                    android:textColor="@color/black"
+                    android:textColorHint="#7C7777"
+                    android:textSize="@dimen/_12sdp"
+                    android:fontFamily="@font/comfortaa"
+                    android:id="@+id/edtpasien"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:background="@drawable/login"
+                    android:hint="Nama Pasien"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:singleLine="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Tanggal Lahir Pasien"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textColorHint="#7C7777"
+                    android:textSize="@dimen/_12sdp"
+                    android:fontFamily="@font/comfortaa"
+                    android:id="@+id/ttl"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:background="@drawable/login"
+                    android:hint="Tanggal Lahir"
+                    android:gravity="center_vertical"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="No HP Pasien"
+                    android:textColor="@color/black"
+                    />
+
+                <EditText
+                    android:textColor="@color/black"
+                    android:textColorHint="#7C7777"
+                    android:textSize="@dimen/_12sdp"
+                    android:fontFamily="@font/comfortaa"
+                    android:id="@+id/nohp_reg"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:background="@drawable/login"
+                    android:hint="No HP Pasien"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Alamat Pasien"
+                    android:textColor="@color/black"
+                    />
+                <EditText
+                    android:textColor="@color/black"
+                    android:textColorHint="#7C7777"
+                    android:textSize="@dimen/_12sdp"
+                    android:fontFamily="@font/comfortaa"
+                    android:id="@+id/alamat_reg"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:background="@drawable/login"
+                    android:hint="Alamat Pasien"
+                    android:gravity="center_vertical"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Jenis Kelamin Pasien"
+                    android:textColor="@color/black"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login"
+                    android:layout_marginBottom="@dimen/_8sdp">
+                    <Spinner
+                        android:textColor="@color/black"
+                        android:textColorHint="#7C7777"
+                        android:textSize="@dimen/_12sdp"
+                        android:id="@+id/edt_jekel_pasien_reg"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:hint="Jenis Kelamin"
+                        android:fontFamily="@font/comfortaa"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Username"
+                    android:textColor="@color/black"
+                    />
+
+
+                <EditText
+                    android:textColor="@color/black"
+                    android:textColorHint="#7C7777"
+                    android:fontFamily="@font/comfortaa"
+                    android:id="@+id/edtusername"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:background="@drawable/login"
+                    android:hint="Username"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textSize="@dimen/_12sdp"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Password"
+                    android:textColor="@color/black"
+                    />
+
+                <com.xwray.passwordview.PasswordView
+                    android:textColor="@color/black"
+                    android:textColorHint="#7C7777"
+                    android:textSize="@dimen/_12sdp"
+                    android:fontFamily="@font/comfortaa"
+                    android:id="@+id/edtpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/login"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:singleLine="true"/>
+
+                <TextView
+                    android:id="@+id/btnRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@color/hijau"
+                    android:text="Daftar"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15sdp"/>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/comfortaa"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sudah Punya akun? "/>
+                    <TextView
+                        android:fontFamily="@font/comfortaa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Login"
+                        android:textColor="?colorPrimaryVariant"
+                        android:id="@+id/txt_login"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

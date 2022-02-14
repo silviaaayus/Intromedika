@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/detailCariPasien"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/ic_baseline_close_24"/>
+
+        <TextView
+            android:fontFamily="@font/comfortaa_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data Pasien"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            android:textColor="?colorPrimaryVariant"
+            android:layout_marginBottom="@dimen/_5sdp"/>
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/black"
+                android:fontFamily="@font/comfortaa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kategorin Pasien "
+                android:layout_weight="1"
+                />
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login"
+                >
+                <Spinner
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/kategori_pasien_lama"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_25sdp"
+                    android:hint="Kategori Pasien"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_12sdp"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:weightSum="2">
+
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama "
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:id="@+id/nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="1"
+                android:fontFamily="@font/comfortaa"
+                android:text="Silvia Ayu"
+                android:textColor="?colorPrimaryVariant" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:weightSum="2">
+
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NIK "
+                android:layout_weight="1"
+                />
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="26-03-2021"
+                android:textColor="?colorPrimaryVariant"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="1"
+                android:id="@+id/nikCari"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:weightSum="2">
+
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jenis Kelamin "
+                android:layout_weight="1"
+                />
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="26-03-2021"
+                android:textColor="?colorPrimaryVariant"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="1"
+                android:id="@+id/jekel_cari"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:weightSum="2">
+
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Lahir "
+                android:layout_weight="1"
+                />
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="26-03-2021"
+                android:textColor="?colorPrimaryVariant"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="1"
+                android:id="@+id/ttl_new_cari"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:weightSum="2">
+
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alamat "
+                android:layout_weight="1"
+                />
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="26-03-2021"
+                android:textColor="?colorPrimaryVariant"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="1"
+                android:id="@+id/alamat_cari"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:weightSum="2">
+
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No HP "
+                android:layout_weight="1"
+                />
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="26-03-2021"
+                android:textColor="?colorPrimaryVariant"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="1"
+                android:id="@+id/nohp"/>
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/btnpasienlama"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="?colorPrimaryVariant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Ambil No Antrian"/>
+
+</LinearLayout>
+
+
+</RelativeLayout>

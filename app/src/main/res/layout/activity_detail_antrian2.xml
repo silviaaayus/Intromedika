@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/_5sdp"
+    android:layout_margin="@dimen/_5sdp"
+    tools:context=".Antrian.DetailAntrianActivity2">
+
+    <ImageView
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logoklinik"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sistem Antrian"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp"
+        android:fontFamily="@font/comfortaa_bold"
+        android:layout_marginBottom="@dimen/_18sdp"/>
+
+    <TextView
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tglKunjunganDetail"
+        android:text="05 Oktober 2021"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+        android:fontFamily="@font/comfortaa_bold"/>
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/imgjam"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:src="@drawable/ic_baseline_access_time_24"
+            app:tint="@color/black" />
+
+        <TextView
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:id="@+id/jamAwalDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10.00"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/comfortaa_bold"
+            android:textSize="@dimen/_12sdp"
+            />
+        <TextView
+            android:id="@+id/JamAkhirDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10.00"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/comfortaa_bold"
+            android:textSize="@dimen/_12sdp"
+            />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:background="@color/black"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nomor Antrian"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/comfortaa_bold"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/nomorantrian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:textSize="@dimen/_18sdp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/comfortaa_bold"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/namaPoliDetail"
+        android:text="Poli Gigi"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/comfortaa_bold"/>
+    <RelativeLayout
+        android:background="@color/black"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apotek dan Klinik Intromedika"
+        android:fontFamily="@font/comfortaa_bold"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:textSize="@dimen/_12sdp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jl.H.Agus Salim No.19C Padang"
+        android:fontFamily="@font/comfortaa_bold"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:textSize="@dimen/_10sdp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telp : 0751-811150"
+        android:fontFamily="@font/comfortaa_bold"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:textSize="@dimen/_10sdp"/>
+
+
+
+
+
+</LinearLayout>

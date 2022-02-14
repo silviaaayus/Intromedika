@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.silvia.medical">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logointromedika"
+        android:label="@string/app_name"
+        android:noHistory="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Medical"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".LupaPassActivity"></activity>
+        <activity android:name=".Profil.EditProfilActivity" />
+        <activity android:name=".Antrian.DetailAntrianActivity2" />
+        <activity android:name=".Dokter.DokterActivity" />
+        <activity android:name=".Profil.ChangePasswordActivity" />
+        <activity android:name=".Antrian.DetailAntrianActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".Booking.BookingActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>
